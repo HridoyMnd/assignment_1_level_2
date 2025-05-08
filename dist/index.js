@@ -32,3 +32,11 @@ class Car extends Vehicle {
         return `The car model is ${this.model}`;
     }
 }
+function processValue(value) {
+    if (typeof value === "string") {
+        return value.length;
+    }
+    else {
+        return value * 2;
+    }
+}
