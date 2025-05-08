@@ -11,3 +11,7 @@ function filterByRating(items: { title: string; rating: number }[]): { title: st
   return HighestRating;
 }
 
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+    return arrays.reduce((acc, curr) => acc.concat(curr), []);
+  }
+
