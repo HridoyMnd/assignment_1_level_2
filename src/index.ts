@@ -84,3 +84,16 @@ function getDayType(day: Day): string {
     return `Today is WeekDay`;
   }
 }
+
+async function squareAsync(n: number): Promise<number> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if (n < 0) {
+          reject(("Number must be Positive"));
+        } else {
+          resolve(n * n);
+        }
+      }, 1000);
+    });
+  }
+
