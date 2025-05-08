@@ -20,13 +20,12 @@ However, they have some common different
     ➤ It can extend other interfaces using the extends keyword  
 
 ### Example:
- // Interface example  
 interface Person {  
   name: string;  
   age: number;  
-}
+}  
 const person: Person = {   
-  name: "John Doe",
+  name: "John Doe",  
   age: 30,  
 };    
 
@@ -36,7 +35,6 @@ const person: Person = {
       ➤ It can be used to define the structure of an object, primitive types, union types and tuple types.
 
 ### Example: 
-// Type example  
 type Point = {  
   x: number;  
   y: number;  
