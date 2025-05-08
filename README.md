@@ -25,7 +25,7 @@ interface Person {
   name: string;  
   age: number;  
 }
-
+![Alt Text]()
 const person: Person = {   
   name: "John Doe",
   age: 30,  
