@@ -47,13 +47,13 @@ const point: Point = {
 ### KeyOf 
 In TypeScript, keyof is a type operator that extracts the keys of an object type as a union of string or number literal types. It is useful for working with objects in a type-safe way, especially when dealing with dynamic data or generic functions.  
 ### Example:
-type Person = {  
+type User = {  
+  id: number
   name: string;  
-  age: number;  
-  location: string;  
+  age: number;    
 };  
 
-type PersonKeys = keyof Person;  
+type PersonKeys = keyof User;  
 
 ### Enums
 Enums, short for enumerations, are a feature in TypeScript that allow developers to define a set of named constants. They serve as a way to organize and represent a fixed set of values, making code more readable and maintainable. TypeScript provides both numeric and string-based enums.  
@@ -62,27 +62,27 @@ Enums, short for enumerations, are a feature in TypeScript that allow developers
 By default, if no values are assigned, the enum members are automatically assigned numerical values starting from 0. It's also possible to explicitly assign values to enum members, which can be any number. 
 
 ### Example:
-enum CardinalDirection {  
-  North, // 0  
-  East,  // 1  
-  South, // 2  
-  West   // 3  
+enum Count {  
+  One,  
+  Two,  
+  Three,  
+  Four  
 }  
-enum StatusCodes {  
-  NotFound = 404,  
-  Success = 200,  
-  Accepted = 202,  
-  BadRequest = 400  
+enum Number {  
+  ten = 10,  
+  twenty = 20,  
+  thirty = 30,  
+  Forty = 40  
 }  
 
 ### String Enums
 In string enums, each member must be explicitly assigned a string literal value.  
 
-example:  
-enum MediaTypes {  
-  JSON = "application/json",  
-  XML = "application/xml",  
-  CSV = "text/csv"  
+### example:  
+enum UserInfo {  
+  name = "person name",  
+  address = "person address",  
+  country = "person country"  
 }  
 
 ### Inference:
@@ -100,7 +100,7 @@ TypeScript infers age as a number and name as a string based on their assigned v
 This automatic detection ensures type safety without requiring explicit annotations.  
 
 ### Example:
-let x = 10; // TypeScript infers x as a number  
+let x = 10;   
 console.log(typeof x);  
 
 TypeScript infers the type of x as number based on the initial value 10.
@@ -117,8 +117,7 @@ A union type uses the | operator to define a type that can be one of several typ
 type StringOrNumber = string | number;  
 let value: StringOrNumber;  
 value = "hello";  
-value = 123;  
-// value = true; // Error: Type 'boolean' is not assignable to type 'string | number'  
+value = 123;   
 
 ### Intersection: 
 An intersection type uses the & operator to combine multiple types into one. The resulting type has all the properties and methods of all the intersected types.are useful for combining interfaces or types to create a new type with all the properties and methods of the original types, such as when modeling objects that have multiple roles or aspects.
