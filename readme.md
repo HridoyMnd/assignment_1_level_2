@@ -64,7 +64,7 @@ Enums, short for enumerations, are a feature in TypeScript that allow developers
 By default, if no values are assigned, the enum members are automatically assigned numerical values starting from 0. It's also possible to explicitly assign values to enum members, which can be any number. 
 
 ### Example:
-enum CardinalDirection {
+enum CardinalDirection {  
   North, // 0  
   East,  // 1  
   South, // 2  
