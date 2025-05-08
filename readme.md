@@ -21,41 +21,41 @@ However, they have some common different
     ➤ It can extend other interfaces using the extends keyword  
 
 ### Example:
-//define the structure an object 
+//define the structure an object   
 interface Person {  
   name: string;  
   age: number;  
 }  
 
-// Declaration merging extending the same interface name
+// Declaration merging extending the same interface name  
 interface Person {  
-  address:string;  
-}
+  address:string;    
+}  
 
-//extend the another interface
+//extend the another interface  
 interface Person2 extends Person {  
   role: "admin" | "superadmin";  
-}
+}  
 ### types
       ➤ It can be used to create type aliases which are essentially new names for existing types  
       ➤ It does not support declaration merging 
       ➤ It can be used to define the structure of an object, primitive types, union types and tuple types.
 
 ### Examples: 
-//type aliases (custom name for existing type)
-type UserID = string;
+//type aliases (custom name for existing type)  
+type UserID = string;  
 
-//primitive type
+//primitive type  
 type Status = "active" | "inactive";  
 
-//union type
-type Response = string | number;
+//union type  
+type Response = string | number;  
 
-// tuple type
-type Point = [number, number];
+// tuple type  
+type Point = [number, number];  
 
-//object 
-type Point = {  
+//object   
+type Point = {    
   x: number;  
   y: number;  
 };  
