@@ -38,12 +38,12 @@ const person: Person = {
 
 ### Example: 
 // Type example
-type Point = {
-  x: number;
-  y: number;
-};
-
-const point: Point = {
-  x: 10,
-  y: 20,
+type Point = {  
+  x: number;  
+  y: number;  
 };  
+
+const point: Point = {  
+  x: 10,  
+  y: 20,  
+};    
