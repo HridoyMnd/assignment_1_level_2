@@ -20,16 +20,16 @@ However, they have some common different
     ➤ It can extend other interfaces using the extends keyword  
 
 ### Example:
- // Interface example
-interface Person {
-  name: string;
-  age: number;
+ // Interface example  
+interface Person {  
+  name: string;  
+  age: number;  
 }
 
-const person: Person = {
+const person: Person = {   
   name: "John Doe",
-  age: 30,
-};  
+  age: 30,  
+};    
 
 ### types
       ➤ It can be used to create type aliases which are essentially new names for existing types  
