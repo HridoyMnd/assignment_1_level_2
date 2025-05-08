@@ -15,6 +15,7 @@ In typescript Interface and type both are used to define the structure of object
 However, they have some common different 
 
 ### Interface
-  ➤ It can only be used to define the structure of an object
-  ➤ It supports declaration merging which means that, if you declare multiple interface with the same name the compiler will merge them into a single interface
-  ➤ It can extend other interfaces using the extends keyword
+   ➤ It can only be used to define the structure of an object
+   ➤ It supports declaration merging which means that, if you declare multiple interface with the same name the compiler will merge them into a single interface
+   ➤ It can extend other interfaces using the extends keyword
+  
