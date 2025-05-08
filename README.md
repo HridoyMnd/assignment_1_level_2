@@ -15,5 +15,5 @@ In typescript Interface and type both are used to define the structure of object
 However, they have some common different 
 
 ### Interface
-   ➤ hello
-   ➤ Hello 2
+   ➤ hello  
+   ➤ Hello 2  
