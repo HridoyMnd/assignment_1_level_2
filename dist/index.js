@@ -14,3 +14,21 @@ function filterByRating(items) {
 function concatenateArrays(...arrays) {
     return arrays.reduce((acc, curr) => acc.concat(curr), []);
 }
+class Vehicle {
+    constructor(make, year) {
+        this.make = make;
+        this.year = year;
+    }
+    getInfo() {
+        return `The Car Made by ${this.make} company In ${this.year}`;
+    }
+}
+class Car extends Vehicle {
+    constructor(make, year, model) {
+        super(make, year);
+        this.model = model;
+    }
+    getModel() {
+        return `The car model is ${this.model}`;
+    }
+}
